@@ -2,5 +2,6 @@
 #include "dual.hpp"
 
 class func {
-    func(int n, ...);
+    func(dual input);
+    float diff();
 };
