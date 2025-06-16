@@ -1,4 +1,6 @@
 #include <math.h>
+#include <vector>
+#include <unsupported/Eigen/CXX11/Tensor>
 
 using namespace std;
 
@@ -27,6 +29,13 @@ struct dual {
     }
 };
 
+namespace Eigen {
+    template<>
+    struct NumTraits<dual> {
+
+    };
+}
+
 // format: implementing existing functions with _d to indicate dual arithmetic
 
 dual sin_d(dual x);
@@ -38,3 +47,6 @@ dual exp_d(dual x);
 dual log_d(dual x);
 
 dual pow_d(dual x, int n);
+
+// composite function with dual inputs will compute output and first-order
+// derivative

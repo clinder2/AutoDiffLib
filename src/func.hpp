@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #include "dual.hpp"
 
 class func {
