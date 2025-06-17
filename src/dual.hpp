@@ -29,12 +29,12 @@ struct dual {
     }
 };
 
-namespace Eigen {
+/* namespace Eigen {
     template<>
     struct NumTraits<dual> {
 
     };
-}
+} */
 
 // format: implementing existing functions with _d to indicate dual arithmetic
 

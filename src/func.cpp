@@ -1,4 +1,5 @@
 #include "func.hpp"
+#include "layer.hpp"
 #include <iostream>
 
 
@@ -19,5 +20,6 @@ int main() {
     cout<<((a+epsilon)*b).im<<"\n";
     cout<<f(a+epsilon,b,c).real<<"\n";
     cout<<f(a+epsilon,b,c).im<<"\n";
+    //sigmoid s;
     return 0;
 }
